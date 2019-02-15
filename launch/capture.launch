@@ -1,0 +1,11 @@
+<launch>
+
+    <node pkg="capture_waypoints" type="capture_waypoints" name="capture_waypoints" output="screen">
+
+		<!-- Image topics -->
+		<!-- NOTE: input topics have to be time-synchronized (header/stamp should match) -->
+		<param name="input_pose_topic" value="/RGBD/CamPoseENUFrame"/>
+		<param name="output_file" value="$(find capture_waypoints)/waypoint_files/wps.txt"/>
+	</node>
+
+</launch>
