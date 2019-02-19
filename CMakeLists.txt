@@ -32,5 +32,7 @@ include_directories(
 )
 
 add_executable(capture_waypoints src/capture_waypoints.cpp
-                                 src/helper.cpp)
+                                 src/helper.cpp
+                                 src/msg_conversions.cpp
+                                 src/visualization_functions.cpp)
 target_link_libraries(capture_waypoints ${catkin_LIBRARIES})
