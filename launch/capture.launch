@@ -3,7 +3,7 @@
     <node pkg="capture_waypoints" type="capture_waypoints" name="capture_waypoints" output="screen">
 
 		<!-- Input pose topic -->
-		<param name="input_pose_topic" value="/Bilbo/RGBD/CamPoseENUFrame"/>
+		<param name="input_pose_topic" value="/Sauron/RGBD/COMPoseENUFrame"/>
 
 		<!-- Output file -->
 		<param name="output_file" value="$(find capture_waypoints)/waypoint_files/wps.txt"/>
